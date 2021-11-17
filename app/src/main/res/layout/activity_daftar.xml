@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Daftar">
+
+    <TextView
+        android:id="@+id/backLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:textSize="12sp"
+        android:textColor="@color/young_blue"
+        android:layout_margin="20dp" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/smalllogo"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/backLogin"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Akun"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mohon isi data diri anda dengan benar"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="10sp"/>
+
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:hint="Nama"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min. 6 karakter"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/orange"/>
+
+        <CheckBox
+            android:id="@+id/cbKetentuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya menyetujui Syarat dan Ketentuan
+dan Kebijakan Privasi yang berlaku."
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnSubmitDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/young_blue"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="DAFTAR"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah daftar akun?"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvMasuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Masuk"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/young_blue"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
